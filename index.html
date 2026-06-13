@@ -579,11 +579,12 @@
 				document.getElementById('wishMessage').value = ''; // Kosongkan textarea
 				responseMessage.textContent = 'Ucapan berhasil dikirim! 😊';
 				responseMessage.style.color = '#38a169'; // Tailwind green-600
-			} catch (e) {
+			} 
+			//catch (e) {
 				console.error("Error adding document: ", e);
 				responseMessage.textContent = 'Terjadi kesalahan. Silakan coba lagi.';
 				responseMessage.style.color = '#e53e3e'; // Tailwind red-600
-			}
+		}
 		});
 
 		// Fungsi untuk menampilkan data dari Firestore secara real-time
